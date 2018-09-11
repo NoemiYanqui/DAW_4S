@@ -1,0 +1,28 @@
+El subir la data(los productos)
+Hay algunas requisitos que podriamos obviar , y saber flujo adecuado de los procesos.
+
+Teoria-> Análisis de la empresa(El flujo de la empresa, analisis de casos de uso
+evidencias de que les haya entregado data. diagramas, módulos necesita)
+conceptos empresariales , tipos de emprendimientos
+semana 7-8 documentacion (esa nota será del examen1)
+semana 15 va aser código del examen 
+Practico->Realizar el sistema de los flujos de la empresa vista en teoria.
+
+Extras-> phyton (puntos )
+
+////////////////////////////////////////////////////////////////////////////////
+
+ENTREGA DE REPOSITORIOS -> pegar el URL de los repositorios(en canvas)
+
+////////////////////////////////////////////////////////////////////////////////
+la cuenta se puede crear en bitbucket (que será en privado y enviar la invitacion)
+o en github  , gitlab, 
+microsfot es opensource, esta apoyando ajavascript; skype react, electron y 
+tambien visual studio.
+
+RECOMENDACION GITLAB (es ilimitado)
+
+se elimina la carpeta vendor, y asi se envia el codigo.(pesa menos)
+
+gitignore (el git ignora todo lo que esta en ciertas carpetas, dependendcias, testing, puedo 
+poner el archivo de vendor)
