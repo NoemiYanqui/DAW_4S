@@ -1,0 +1,16 @@
+/////////////////////////////////////////////////////////////////////////////
+OBSERVACIONES
+////////////////////////////////////////////////////////////////////////////
+1. Se observó la configuración de un dominio de modo que se enmascaró la dirección
+   IP añadiendole también gestorlaravel.com, del mimo modo se configuro tambien en el archivo
+    hhtpd-vhosts.conf la configuracion del nombre del servidor que es el mismo.
+2. Se observa que en el punto 5.1 
+    Al crear php artisan app:name Destor imágenes, se crea los archivos de User.php, 
+    un composer en formato JSON, un archivo phpspec.yml , una carpeta con nombre vendor (ya existente anteriormente) pero ahor se le añade autoload.php
+3.Se observó la creación de una base de datos por medio de phpMyAdmin, que al ingresar nos pide una contraseña.
+4.Se observo la impleemntacion del modelo Vista Controlador MVC, la cardialidad de los modelos
+se dió por medio de funciones donde se uso los códigos hasMany  /belongsTo, dicho modelos se implementaron en la carpeta de app
+5.La creacion de los controladores se encuentran en la carpeta http.
+6.Se observó la implementacion del código de un trait.
+////////////////////////////////////////////////////////////////////////////
+CONCLUSIONES

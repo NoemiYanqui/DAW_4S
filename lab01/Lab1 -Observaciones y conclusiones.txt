@@ -1,0 +1,30 @@
+OBSERVACIONES 
+/////////////////////////////////////////////////////////////////////////////
+
+ 
+•	Se observó que se tuvo que instalar wampserver en la versión 3.1.3 , 
+	que es una plataforma de desarrollo web en Windows y que permite crear
+	aplicaciones web con el servidor web Apache,
+	en lenguaje de programación PHP y las BBDD MySql o MariaDB.
+•	Se observó que en la instalación del composer salía un error de  MSVCR110.dll,
+	dicho error se solucionó buscando y actualizando Windows 10
+•	Se instaló Composer version 1.7.1  
+•	Se observó la instalación de paquetes en el editor de texto sublimeText , 
+	como el emmet, SideBarEnhancements, advancedNewFile y sublimecodeintel
+•	Se observó que se instaló laravel en la versión ,5.0 a pesar de que ya
+	se cuenta con las versiones 5.4 y 5.4.22
+•	Se observó que al crear un proyecto con el nombre asignado este crea 
+	varias carpetas, y posee un index.php dentro de la carpeta public 
+	(dicho archivo es el que se visualiza con la URL de localhost)
+
+CONCLUSIONES 
+//////////////////////////////////////////////////////////////////////////////
+•	Se concluye que este laboratorio se aprendió a realizar la instalación 
+	de Laravel, para ello previamente se instaló un gestor de paquetes que 
+	es Composer, así como wamp server o xamp, siendo requisitos para que en
+	la posterioridad no se tengan inconvenientes.
+•	Se aprendió que laravel es un framework que utiliza como lenguaje de 
+	programación PHP.
+•	Se instaló Composer.
+•	Se aprendió a instalar laravel por medio de composer usando la siguiente
+	sintaxis create-project laravel/laravel=5.0 GestorImagenes 

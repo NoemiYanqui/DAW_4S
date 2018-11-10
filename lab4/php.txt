@@ -1,0 +1,34 @@
+Introduccion al PHP
+PHP es sensible a las mayusculas case sensitive
+Una variable se declara $ acompañado del nombre de la variable
+include ()
+
+require()
+Son invocaciones 
+la tilde invertida (alt +94) es un texto multilíneas
+las cadenas de testo van entre comillas
+dry-> seco --> DONT REPEAT YOURSELF (traten de no repetir código)
+variables de tipo string , numero y boolean
+
+$nombre="Carlos";
+$edad=14;
+$legal=true;
+$documentos=array('DNI 12451278' , 'LM  62626262');
+//array multidimensional
+$familia=array('papa'=>'juan','mama'=>'Rebeca','hermana'=>'Arista');
+ para imprimir:
+echo 
+print
+
+
+*** Aplicar el patron de BuilderFactory es lo mismo que hizo henry Ford, 
+el diseño la linea de ensamblaje y producia en masa.***
+
+Inteligencia artificial, esta hehco en phyton, hadoo
+branch--> cogo un sistema y yo hago mi copoa mi version de él.
+Las primeras versionde facebook esta en php y luego el hizo un branch
+en php.
+Ejemplos de inteligencia artificial o machine learning.
+TensorFlow  
+android things , como hacer un dispositvo casero de android.
+

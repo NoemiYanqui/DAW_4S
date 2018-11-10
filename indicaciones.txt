@@ -1,5 +1,0 @@
-
-En el canvas se envía el repositorio git-hub git-lab git-
-cada lab en una carpeta
-carpeta deimagenes y conclusiones
-archivos de conclusiones .txt

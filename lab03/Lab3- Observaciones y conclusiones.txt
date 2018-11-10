@@ -1,0 +1,28 @@
+LABORATORIO 3:
+//////////////////////////////////////////////////////////////////////////////////////7
+Estudiante:Noemí Yanet Yanqui Cueva
+///////////////////////////////////////////////////////////////////////////////////////
+OBSERVACIONES
+
+--> Observamos la crecion de los controladores, cada una de ellas tenia un constructor
+    así como las funciones de get y post por cada elemento del crud.Así se realizó para 
+    la tabla de foto, album y usuario, ademas que son clases que heredan de Controller.
+
+-->Se observó que los controladores se encuentra en la carpeta Http(en php)
+-->Se observó la creación de un método missingMethod que sirve para lanzar un error
+   
+-->Se observó la creacion de la rutas.
+-->Se observó que laravel crea un archivo authenticate que verifica las credenciales del
+   usuario 
+-->Se vió que larvel crea las vistas se encuentran dentro de la carpeta recursos, 
+   además de esto la carpeta vista se clasifica en tres más emails, vista de errores ,
+   vistas de validacion y la carpeta vendor.
+
+//////////////////////////////////////////////////////////////////////////////////////
+CONCLUSIONES
+//////////////////////////////////////////////////////////////////////////////////////7
+
+-->Se concluye que utilizar el framework laravel , facilita mucho el trabajo de
+   un programador puesto que utiliza el modelo MVC de modo que ya nos crea las 
+   vistas, la autenticación. 
+

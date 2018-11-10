@@ -1,0 +1,15 @@
+Se observo la creacion de las tablas de albumes y fotos desde la consola por medio del codigo
+php artisan make:migration --create="albumes" CrearTablaAlbumes, además cada uno de estos archivos 
+se crean en la carpeta de database/migrations/.. 
+Se observa que cada migracion se crea automaticamente dos funcion una up y otra down, dentro de la primera 
+por defecto viene el id que es incrementable y un dato timestamps.
+Se obervó un error de que no reconocia el usuario root y la contraseña , de modo que se cambió el archvivo 
+.env y alli se modificó las credenciales, peusto que mi password era nada ya lli estaba configurada como root.
+Al migrar una base de datos se vió el error de sintaxis y esto fue por que se asigno la propiedad de unsigned
+a un tipo de dato string, xcuando este sólo se le asign a un integer.
+Se observa que al ejecutar el php artisan db:seed no se resconocica una columna, y eto esra por que cuando se migró
+las bases de datos se grabo el campo como "repuesta" y cuando se envio el seed, ese campo estaba con "respuesta" pues eso generó 
+incongruencias, de modo que corregí el archivo de la carpeta migrate,posteriormente se borró la migracion >php artisan migrate:rollback
+y nuevamente se volvió migrar las tablas.
+
+8. Al ejecutar db:seeder se observa que se insertaron varios filas de datos, en las tres tablas, pero no me reconoce el campo de descripcion
