@@ -1,0 +1,32 @@
+OBSERVACIONES:
+
+Se observo la creacion de las tablas de albumes y fotos desde la consola por medio del codigo
+php artisan make:migration --create="albumes" CrearTablaAlbumes, además cada uno de estos archivos 
+se crean en la carpeta de database/migrations/.. 
+Se observa que cada migracion se crea automaticamente dos funcion una up y otra down, dentro de la
+ primera 
+por defecto viene el id que es incrementable y un dato timestamps.
+Se obervó un error de que no reconocia el usuario root y la contraseña , de modo que se cambió el 
+archvivo .env y alli se modificó las credenciales, peusto que mi password era nada ya lli estaba 
+configurada como root.
+Al migrar una base de datos se vió el error de sintaxis y esto fue por que se asigno la propiedad
+de unsigned a un tipo de dato string, xcuando este sólo se le asign a un integer.
+Se observa que al ejecutar el php artisan db:seed no se resconocica una columna, y esto es porque
+cuando se migró las bases de datos se grabo el campo como "repuesta" y cuando se envio el seed,
+ese campo estaba con "respuesta" pues eso generó incongruencias, de modo que corregí el archivo de
+la carpeta migrate,posteriormente se borró la migracion >php artisan migrate:rollback
+y nuevamente se volvió migrar las tablas y ejecutar el seeder
+Se observa que al crear una migración se ven 2 funciones, up y down, en la primera se genera 
+el schema , donde declaramos los atributos se ve atributos como unique, increments y rememberToken
+pregunta8.
+Al ejecutar db:seeder se observa que se insertaron varios filas de datos que se 
+visualiza en MyAdmin.
+Se vió la app_debug=false del archivo .env hy tambien cuando se pone true se muestra 
+el alert.
+
+CONCLUSIONES
+
+Se aprendió a crear migraciones, crear seeders.
+Se crearon mensajes y páginas de excepción personalizados, para ello importamos toKenMismatchException.
+Se aprendió a realizar el acceso y validación de usuarios,para ello se importa un request.
+Se aprendió a crear request por consola, y posee dos funciones el de authorize y roles
