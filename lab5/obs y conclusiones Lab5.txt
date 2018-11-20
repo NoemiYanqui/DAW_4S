@@ -1,0 +1,22 @@
+/////////////////////////////////////////////////////////////////////////////////////
+OBSERVACIONES
+/////////////////////////////////////////////////////////////////////////////////////
+=>Se creó una carpeta de usuario, aqui creamos un actualizar.blade , para darle 
+	funcionalidad se inserta código en la funcion de detEditarPerfil para que 
+	retorne a la vista usuario.actualizar.
+=>Se observa que en la vistae app.blade.php se le añade  un link que dice Actualizar	
+	perfil, enviandole a una url que mostrará la vista de actualizar.blade, que 
+	poseerá un formulario cuyo método es post, además que se la da una accion,
+	observamos que a cada input tiene un value que es el usuario logeado con 
+	cada atributo distinto, como el nombre, pregunta, respuesta.
+=>Se observa la creacion de un request el cual return un array con los campos nombres,
+	password, pregunta y respuesta.
+=>Se observa la importancia de importar el Request en la clase UsuarioController, y 
+	también la clase Auth(clase  que brinda la informacion del usuario Autenticado)
+
+/////////////////////////////////////////////////////////////////////////////////////
+CONCLUSIONES
+/////////////////////////////////////////////////////////////////////////////////////
+=>Se aprendió a actualizar el perfil del usuario, por medio de getEditarPerfil y 
+	postEditarPerfil, en este último comprobamos que el campo de password esté lleno , 
+	si es así se le asigna dicho valor; lo mismo sucede con la pregunta 
