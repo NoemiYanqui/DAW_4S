@@ -1,0 +1,28 @@
+OBSERVACIONES
+/////////////////////////////////////////////////////////////////////////////////////
+=>Se observó que en las funciones de getActualizarAlbum sólo recibe como parametro $id
+	en dicha funcion se se obtiene sólo el álbum que posee ese id, finalmente se 
+	retorna una vista dandole una direccion y un objeto album.
+=>Se observa que en la creacion de la vista Actualizar álbum , se genera un input de	
+	tipo hidden en el que se guarda el id del álbum.
+=>Se observa que la vista mostrar.blade debe tener un nuevo botón que permita editar dicho 
+	álbum en dicho botton debemos enviarle la direccion, para que vaya a la vista
+	de actualizar-album.
+=>Se observa que en los requests se seben importar use illuminate\Support\Facades\Auth, 
+	tambien debemos importar el modelo como por ejemplo 
+	use GestorImagenes(nombre_del_project)\foto(nombre del modelo).
+=>Se observa que en las funciones get estamos retornando una vista, en cambio en las 
+	funciones de post se retorna un redireccion 
+=>Se observa la utilización de metodos como hasFile(), sha1(), carbon::now(), 
+	guessExtension() file_exists().
+=>Se observa que para cargar una imagen es un input de type file , que genera un botón 
+	y nos abre un archivo para buscar la imagen desde nuestra pc.
+ 
+CONCLUSIONES
+/////////////////////////////////////////////////////////////////////////////////////
+- Se aprendió a crear la funcionalidad de Editar un Album , conociendo que implica 
+	una serie de pasos.
+-Se aprendió a crear la funcionalidad de Editar una Foto, viendo nuevamente la creacion de
+	request, configurando el requests, añadir un botón de editar foto en la vista 
+	mostrar.blade , asi como crear una vista editarFoto.
+	

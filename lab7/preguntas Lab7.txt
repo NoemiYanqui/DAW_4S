@@ -1,0 +1,63 @@
+//////////////////////////////////////////////////////////////////////////////////////
+				PREGUNTAS DEL LABORATORIO N°7
+/////////////////////////////////////////////////////////////////////////////////////
+
+1. ¿Qué hicimos al agregar
+	<p><a href="/validado/albumes/actualizar-album/{{$album->id}}" 
+	class="btn btn-primary" role="button">Editar Álbum</a></p> ?
+	Estamos enviandole una direccion, lo estamos direccionando a 
+	la vista de actualizar-album.
+	Se agregó  el botón a la vista de mostrar de la carpeta de albumes,
+	esto de hizo dentro de un href dándole la acción o la URL que será direccinada
+	a la vista de actualizar-album
+
+2.¿De que se encarga la funcion authorize() en el ActualizarAlbumREQUEST?
+	Es autentificar el usuario y ademas comprobar de que el id del album le pertenece
+	al usuario logeado actualmente.
+	Finalmente esta funcion determina si esta petición o request podrá será
+	actualizado o no, sólo si cumple la autentificaicon para este caso.
+
+3.¿Que es lo que hace el codigo de la function postActualizarAlbum?
+	Recibe un request; obtiene sólo el album con el id del request, se le asignan las
+	atributos del album , como nombre, descripcion, que se obtienen del request,después
+	se guarda el album, para finalmente redireccionarlo a /validado/albumes , con los 
+	atributos de actualizado , que más adelante podrá servir para configurar un alert.
+
+4.¿Qué se hizo con la function postActualizarAlbum en el controlador de Album?
+	Se obtienen el id de un album y a las propiedades de álbum , se obtienen los valores 
+	ingresados, dicho albumse guarda y finalmente se redirecciona a una url.
+
+5. ¿Qué hizo la funcion getActualizarFoto($id) del controlador FotoControlador?
+	Se recibe el parametro id y se crea una variable foto que será igual al objeto foto 
+	con dicho id , para luego retornar a la vista de actualizar-foto con el id de dicha foto.
+
+6.¿Que se está haciendo en las dos funcionesde ActualizarFotoRequest?
+	En la de authorize se comprueba que el usuario esté logeado , sólo de ese modo puede
+	actualizar su foto, se obtiene el album entonces se podra actualizar , pero si no hay 
+	ningun album no podrá ser actualizado.
+	En la funcion rules lo que hace es retornar un arreglo que tiene los datos de is, nombre,
+	descripcion  e imagen cada uno de estos se le dice que son requeridos salvo el de imagen,
+	que sólo le da un limite máximo de tamaño, este request será recibido en la function 
+	del controlador.
+
+7.Explicar linea a linea que hace la función de postActualizarFoto(ActualizarFotoRequest $request)?
+	Crea una variable $foto que lo que hace es obtener sólo una foto con el id que obtenemos
+	del request , a esta foto se le asignan sus atributos de nombre y descripcion que son obtenidos
+	por medio de la funcion de get() , gracias al request.
+	Despues la condicional if pregunta si el request tiene una imagen, en caso de ser así se 
+	crea una variable $imagen y le asigna la imagen del request, se crea una variable $ruta,
+	una variable $nombre que estará encriptada, este nombre poseerá la fecha actual de la 
+	actualización concatenado con la extension de la imagen.
+	La variable imagen será movida , para ello se obtienen la direccion concatenada con la ruta de la foto.
+	
+8.¿Porqué tiene que verificarse que la ruta exista?Es necesaria la verificacion
+	En el segundo bloque condicional se pregunta si la ruta existe en caso de ser así se elimina esta ruta,
+	en caso de que no exista la ruta anterior a la variable foto se le asegnia una ruta que será la el valor
+	de la ruta concatenado con el valor del nombre, para que luego la foto sea guardada.
+	Si es necesaria la verificaicon, porque ¿cómo podriamos tener dos imagenes distintas en la misma ruta?
+
+9.¿Qué hace el código de la vista MostrarFotos?
+	En un condicional que indica que cuando la sesion se ha iniciado, es decir se ha logeado y ha sido editada
+	entonces mostraremos el mensaje de lA foto fue editada , y con ayuda del css se verá en un alert verde.
+
+

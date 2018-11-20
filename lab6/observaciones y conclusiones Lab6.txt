@@ -1,0 +1,31 @@
+OBSERVACIONES
+/////////////////////////////////////////////////////////////////////////////////////
+=>Se observó que para insertar un álbum es necesario indicarles a la function 
+	getCrearAlbum(será la vista que se obtiene para crear el album) y la funcction
+	postCrearAlbum(se crea un album en la base de datos).
+=>Se observó que las funciones postCrearAlbum y postCrearFoto reciben un Request,
+	que es la peticion , ademas que posee rules y authorize ; es importante importar
+	dicho request en el controlador,estos se crean dentro de la carpeta de Http\Requests.
+=>Se observa que un Request, posee la function rules() que retorna un array de datos, además´
+	que en dicha funcion se le puede poner atributos como required.
+=>Se observó que se a los datos que se retornan , en el caso de la imagen se le da un tamaño 
+	maximo, además que si la relacion de que la foto pertenece a un album, se debe verificar
+	la existencia del id del album; también en la function authorize el usuario debeb estar
+	autentificado para que pueda crear una foto.
+=>Se observó la creacion de una vista por cada una de las funciones de postCrearAlbum y postCrearFoto
+	además observamos que es necesario poner un boton que indique en crear el album o la foto,
+	este de cre dentro de una etiqueta<a> , tambien alli enviamos la direccion url 	
+=>Se observó que para recuperar la imagen del request se utilizó file(), se observó la librería Carbon
+	que nos permite obtener fechas y horas, tambien se vió el metodo getcwd() que obtienla direccion
+	del archivo, tambien vimos el cifrado sha1
+
+CONCLUSIONES
+////////////////////////////////////////////////////////////////////////////////////
+Se aprendió que el procedimiento para crear un nuevo album o una nueva foto  es configurar
+las funciones de get y post en cada controlados, tanto en el de albumes y de fotos, el de 
+crear un archivo Request que indica si se crea o no , además de los datos requeridos para
+la creacion de estos, posteriormente se debe crear una vista en la carpeta correspondiente,
+las vistas contienen formularios con un botón que indica crear.También en la vista 
+mostrar.blade tanto de la carpeta Foto o Album, alli debemos crear un botón que permita
+ crear y nos redireccione al formulario para la creacion de los mismos.
+
