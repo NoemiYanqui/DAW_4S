@@ -1,0 +1,39 @@
+/////////////////////////////////////////////////////////////////////////////////////
+	OBSERVACIONES Y CONCLUSIONES
+////////////////////////////////////////////////////////////////////////////////////
+
+->Se observó la modificación de los archivos mostrar.blade.php tanto de las vistas de 
+	las carpetas de albumes y fotos,se añadió un if de que si hay por lo menos un álbum 
+	se crea la apertura de un div ,en caso de que el indice es multiplo de tres entonces
+	iniciará  de modo que veremos por una fila de albumes,se mostrarán 3 albumes por cada
+	fila.
+->Se observó la modificación de la función de postEliminarAlbum, para que el controlador al	
+	eliminar un album tambien elimine cada foto de dicho album, esto se hizo usando 
+	un foreach que recorre cada foto con el fin de eliminar las fotos desde el aldo del 
+	servidor.
+->Se observó la mejora de la presentacion de las vistas de mostrar fotos y mosrar albumes.
+->Se concluye que cuando un elemento es contenido dentro de uno más grande,como el caso de que 
+	un álbum contienen muchas foto (o en se defecto en el caso de la relación de one to many),
+	es necesario considerar que se debe eliminar dicho contenido por cada item.
+-> Se observó que podemos modificar las vistas por medio de codigo php usando un if  , un foreach.
+-> Se concluye que trabajar con laravel es bastante fácil, además que se trabaja con un arquitectura
+MVC modelo, vista controlador, vimos la importancia de los request , y de personalizar 
+las vistaS de mostrar fotos y mostrar albumes.
+
+/////////////////////////////////////////////////////////////////////////////////////
+			Preguntas y RESPUESTAS
+/////////////////////////////////////////////////////////////////////////////////////
+
+Los detalles más resaltantes del código implementado de la función postEliminarAlbum que recorre cada
+elemento de las fotos que tiene el album, que lo que ahce es eliminar la ruta en el servidor.
+
+
+
+
+
+
+
+
+
+
+

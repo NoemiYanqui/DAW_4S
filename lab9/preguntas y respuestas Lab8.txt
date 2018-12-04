@@ -1,0 +1,23 @@
+/////////////////////////////////////////////////////////////////////////////////////
+				PREGUNTAS Y RESPUESTAS LAB 8
+/////////////////////////////////////////////////////////////////////////////////////
+
+1.¿Será necesario usar un método getEliminarAlbum? 
+	No es necesario , porque no necesitamos una vista o algo para eliminar, 
+	la misma accion se ejecutará sólo en la funcion postEliminarAlbum, por eso 
+	eliminamos dicha función.
+2.Explique ¿Que hacen las dos funciones importantes en este request?
+	En el request EliminarFotoRequest la funcion de authorize, se verifica que el
+	usuario esté logeado, despues se obtiene el id del usuario, se obtiene id del
+ 	álbum en el que se encuentra dicha foto.
+3. Explique la funcionalidad del código de  postElIminarFoto 
+	Se obtiene la foto del id del request que sería el id de la foto, se le asigna
+	a la variable $rutaanterior que será el directorio de origen del archivo concatenado
+	con la ruta de la foto.
+	Despues verificamos si existe una imagen en esa rutaanterios entonces se elimina
+	dicha ruta, posteriormente eliminamos la foto, para finalmente retornar una redireccion
+
+
+
+
+

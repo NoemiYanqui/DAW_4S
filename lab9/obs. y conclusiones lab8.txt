@@ -1,0 +1,23 @@
+/////////////////////////////////////////////////////////////////////////////////////
+OBSERVACIONES
+/////////////////////////////////////////////////////////////////////////////////////
+=>Se observa que en la parte de eliminar , especificamente en la funcion 
+	getEliminarAlbum no retorna una vista , como en los demas get del crud, esto se 
+	debe a que no ne necesita, por ello se elimina dicha funcion del controlador
+=>Se observa que el request EliminarAlbumRequest y  EliminarFotoRequest creados sólo  retornan un array que 
+	posee el id de un álbum y el id de una foto
+=>Se observa que en el controlador el album es eliminado por medio de delete().
+=>Se observa que el request envia un id que exista, tanto de una foto o de un álbum.
+
+/////////////////////////////////////////////////////////////////////////////////////
+CONCLUSIONES
+/////////////////////////////////////////////////////////////////////////////////////
+=> Se aprendió a crear la funcionalidad para eliminar álbumes
+=> Se aprendió a crear la funcionalidad para eliminar Fotos.
+=> Se aprendió la relacion Modelo-Vista-Controlador, también después de ver tantas
+	funcionalidades como crear , editar , eliminar se ve que un request se 
+	encuentra en medio de la vista y el controlador, puesto que los atributos de la vista
+	son pasados a un request, despues estos datos del request serán utilizados en el
+	controlador.
+
+NOTA:""""****COPIA DEL LABORATORIO N° 8 ****
